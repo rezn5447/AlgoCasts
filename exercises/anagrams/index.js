@@ -8,6 +8,10 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {}
+function anagrams(stringA, stringB) {
+    var map1, map2 = {}
+    stringA.replace(/[^\w]/g,"").split('').map((l) => map1[l] ? map1[l]++ : map1[l] = 1)
+
+}
 
 module.exports = anagrams;
