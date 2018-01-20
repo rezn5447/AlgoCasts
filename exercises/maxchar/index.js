@@ -7,9 +7,7 @@
 // convert str into object with frequency as values
 
 function maxChar(str) {
-  var charMap = {};
-  str.split('').map(l => charMap[l] > 0 ? charMap[l]++ : charMap[l] = 1)
-  return charMapMath.max(...Object.values(charMap))
+
 }
 
 
