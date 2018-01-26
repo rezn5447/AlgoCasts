@@ -29,3 +29,10 @@ test('Order of elements is maintained', () => {
   expect(q.remove()).toEqual(3);
   expect(q.remove()).toEqual(undefined);
 });
+
+
+
+test('can add elements to a queue', () => {
+  const q = new Queue();
+  expect()
+}
