@@ -52,4 +52,17 @@ class Tree {
   }
 }
 
+traverseDF(fn){
+  const arr = [this.root];
+  while(arr.length){
+    let node = arr.shift();
+    arr.unshift(node.left,node.right)
+    fn(node)
+  }
+
+  inOrderSuccessor(root, p){
+    if(p.right)
+  }
+}
+
 module.exports = { Tree, Node };

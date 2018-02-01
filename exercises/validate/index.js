@@ -22,21 +22,6 @@ function validate(node, min = null, max = null) {
 }
 
 
-// function validate(node, min = null, max = null) {
-//   while(node){
-//     if(node.left > min && min){
-//       return false
-//     } else if(node.right < max && max){
-//       return false
-//     }
-//     if(node.left > min){
-//       min = node.left
-//       validate(node.left, min, max)
-//     }else if (node.right < max){
-//       max = node.right
-//       validate(node.right, min, max)
-//     }
-//   }
-//   return true
-// }
+
+
 module.exports = validate;

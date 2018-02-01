@@ -29,6 +29,24 @@ describe('Node', () => {
   });
 });
 
+describe(Node, () => {
+  test('Node is a construcor', () => {
+    expect(typeof Node.prototype.constructor).toEqual('function');
+  })
+
+  test('Node has a data and children properties', () =>{
+    const n = new Node('a');
+    expect(n.data).toEqual('a')
+    expect(n.children.length).toEqual(0)
+  })
+
+  test('Node can add children' () => {
+    const n = new Node('a')
+    n.add('b')
+    ex
+  })
+})
+
 describe('Tree', () => {
   test('starts empty', () => {
     const t = new Tree();
